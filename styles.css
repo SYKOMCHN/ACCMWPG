@@ -1,0 +1,46 @@
+body {
+    font-family: "Gochi Hand", cursive, monospace;
+    background-color: rgb(62, 133, 79);
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
+.gochi-hand-regular {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main_display{
+    width: 50%;
+    height: 50;
+}
+
+.header{
+    justify-content: center;
+    font-weight: 1000;
+}
+
+
+.container {
+    background-color: antiquewhite;
+    font-family: "Gochi Hand", cursive, monospace;
+
+}
+
+.download_options{
+    display: flex;
+    justify-content: center;
+}
+
+#wallpaper{
+    font-family: "Gochi Hand", cursive, monospace;
+    font-size: 100%;
+    background-color:aliceblue;
+    border: none;
+    font-weight: bold;
+
+}
