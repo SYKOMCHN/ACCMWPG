@@ -4,7 +4,8 @@ body {
                                  antiquewhite);
     display: flex;
     justify-content: center;
-    
+    margin-top: 0;
+    margin-bottom: 0;
 
 
 }
@@ -16,8 +17,8 @@ body {
 }
 
 .main_display{
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
 }
 
 .header{
@@ -39,7 +40,7 @@ body {
     margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 5%;
-    font-size: 150%;
+    font-size: 3vw;
 }
 
 .download_options{
@@ -50,7 +51,7 @@ body {
 
 .wallpaper{
     font-family: "Gochi Hand", cursive, monospace;
-    font-size: 120%;
+    font-size: 2vw;
     background-color:aliceblue;
     border: none;
     font-weight: bold;
@@ -62,8 +63,17 @@ body {
     font-family: "Gochi Hand", cursive, monospace;
     font-weight: bold;
     background-color: rgb(248, 102, 97);
-    font-size: 1.5vw;
+    font-size: 2vw;
     border:none;
+}
+
+.frame{
+    display: flex;
+    justify-content: center;
+}
+
+.collection{
+    padding: 1%
 }
 
 /*.mao_ico{
@@ -123,4 +133,8 @@ button:hover{
 
 select:hover{
     cursor: pointer;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
