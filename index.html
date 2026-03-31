@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/assets/MAO_CLASSICS_3.png">
         <title>ACC: THANK YOU</title>
         <!--font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,34 +13,110 @@
         
     </head>
     <body>
-    
+
         <div class = "header">
-            <div style = "display: flex; justify-content: center; font-size: 4vw;">THANK YOU</div>
+            <div style = "display: flex; justify-content: center; font-size: 5vw;">WELCOME</div>
         <div>
-        <div class = "container">
+            <div class = "container">
+                <div class ="popup" onclick="this.style.display='none',startMusic()">CLICK SCREEN TO OPEN</div>
+            <div class = "section0">
+                <div style = "display: flex; justify-content: center; margin-left: 30%; margin-right: 30%; margin-top: 2%; font-size: 150%;">
+                       Hello ACC members!
+                       On behalf of the ACC Board, I want to thank you all for an amazing semester so far! 
+                       Even if you missed some meetings, you taking time out of your schedule to go really means a lot to us! 
+                       As a small gift to you all, I am giving away March Calendar Wallpapers for free (WEEHEE)!
+                       I hope you all will be with us for our last few meetings on April!
+                </div>
+                 <div style = "display: flex; justify-content: right; margin-left: 30%; margin-right: 30%; margin-top: 2%; margin-bottom: 1%; font-size: 150%;">
+                        Your ACC Visual Design Officer,
+                </div>
+                <div  style = "display: flex; justify-content: right; margin-left: 30%; margin-right: 30%; margin-bottom: 5%; font-size: 150%;">
+                        Oscar :)
+                </div>
+                <br>
+            </div>
             <div class = "section1">
                 <div class = "display" style = "display: flex; justify-content: center;"> 
                     <img class = "main_display" src = "assets/image1/acc_ogratio02232026.jpg">
                 </div>
                 <br>
+                <br>
                 <div class = "download_options">
-                        <select name = "wallpaper" id = "wallpaper">
+                        <select name = "wallpaper" class = "wallpaper" id = "wallpaper">
                             <option value = "default">SELECT TYPE</option>
                             <option value = "original">ORIGINAL  (2806 x 1984)</option>
                             <option value = "pc">PC  (1920 x 1080)</option>
                             <option value = "mobile">MOBILE  (1080 x 2400) </option>
                         </select>
+                        <p></p>
+                        <button class = "img_download" onclick="downloadWallpaper()">DOWNLOAD</button>
+                </div>
+                <br>
+                <br>
+                <div class = "section2">
+                <div class = "hr" style ="width: 100%; height: 1%; background-color: black;">.</div>
+                <br>
+                <div class = "display2" style = "display: flex; justify-content: center; font-size: 4vw">
+                    BEHIND THE DESIGNS
+                </div>
+                <div class = "inner_cont">
+                    <p>
+                        In the contents below, I have included some behind the scenes designs and concepts for the month of March! Aaannnd some Extras!
+                    </p>
+                    <br>
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class = "section2">
-                <div class = "display2">
-                    
+            </div>
+                <div class = "hr" style ="width: 100%; height: 1%; background-color: black;">.</div>
+            <div class = "section3">
+                <div style = "display: flex; justify-content: center; font-size: 5vw;">USER AGREEMENT</div>
+                <div class = "inner_cont">
+                    <p>
+                        The contents downloaded belong to the original creator. By downloading, you agree to not use, sell, or distribute them for commercial or illegal purposes.
+                    </p>
                 </div>
             </div>
-
             </div>
         </div>
+
+        <iframe id="sc_player"
+            width="0" height="0" style="display:none;"
+            scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A291019671&auto_play=true&loop=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&visual=false">
+        </iframe>
+
+         <button id="play_music" onclick="startMusic()"></button>
+
+        <script>
+            function startMusic() {
+                const iframe = document.getElementById('sc_player');
+                iframe.src = iframe.src;
+                document.getElementById('play_music').style.display = 'none';
+            }
+        </script>
+
+        <script src = "scripts/scripts.js"></script>
     </body>
     
 </html>
+
+<!--
+<div class = "section2">
+                <div class = "hr" style ="width: 100%; height: 1%; background-color: black;">.</div>
+                <br>
+                <div class = "display2" style = "display: flex; justify-content: center; font-size: 4vw">
+                    DIGIAL STICKERS
+                </div>
+                <div class = "inner_cont">
+                    <p>
+                        In the contents below, I have include some digital stickers. Digital Stickers?! Kinda..... Essentially, you can covert them into stickers to post as reactions, etc, etc. I'm bad at explaining...Anyhow, check it out!!!
+                    </p>
+                </div>
+                <div class = "sticker">
+                    <button class = "sticker_dwnld">DOWNLOAD</button>
+                </div>
+            </div>
+-->

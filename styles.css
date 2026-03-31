@@ -1,6 +1,7 @@
 body {
     font-family: "Gochi Hand", cursive, monospace;
-    background-color: rgb(62, 133, 79);
+    background: linear-gradient( #ebc9ab 10%,
+                                 antiquewhite);
     display: flex;
     justify-content: center;
     
@@ -16,7 +17,7 @@ body {
 
 .main_display{
     width: 50%;
-    height: 50;
+    height: 50%;
 }
 
 .header{
@@ -26,21 +27,100 @@ body {
 
 
 .container {
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
     font-family: "Gochi Hand", cursive, monospace;
 
+}
+
+.inner_cont{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 150%;
 }
 
 .download_options{
     display: flex;
     justify-content: center;
+    font-size: 1.5vw;
 }
 
-#wallpaper{
+.wallpaper{
     font-family: "Gochi Hand", cursive, monospace;
-    font-size: 100%;
+    font-size: 120%;
     background-color:aliceblue;
     border: none;
     font-weight: bold;
 
+}
+
+
+.img_download{
+    font-family: "Gochi Hand", cursive, monospace;
+    font-weight: bold;
+    background-color: rgb(248, 102, 97);
+    font-size: 1.5vw;
+    border:none;
+}
+
+/*.mao_ico{
+    width: 50%;
+    height: 50%;
+}*/
+/*.sticker{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}*/
+
+/*.sticker_dwnld{
+    font-family: "Gochi Hand", cursive, monospace;
+    font-weight: bold;
+    background-color: rgb(248, 102, 97);
+    border-radius: 5px;
+    font-size: 4vw;
+    border:none;
+}*/
+
+/*.sticker_dwnld:hover{
+    background-color: rgb(151, 36, 36);
+    color: aliceblue;
+}*/
+
+.popup{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    font-size: 5vw;
+    display: flex;
+    background: linear-gradient( #ebc9ab 10%,
+                                 antiquewhite);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.img_download:hover{
+    background-color: rgb(151, 36, 36);
+    color: aliceblue;
+}
+
+
+/* global */
+
+img{
+    pointer-events: none;
+    -webkit-touch-callout: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+select:hover{
+    cursor: pointer;
 }
